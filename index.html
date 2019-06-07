@@ -1,43 +1,94 @@
 <!DOCTYPE html>
-
 <!-- CSS Stylesheets with Relative Paths -->
-
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
+  <title>Amy Claman Bio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                      Projects
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="https://aeclaman.github.io/web/">HTML and CSS (Bootstrap)</a>
+                      <a class="dropdown-item" href="https://aeclaman.github.io/javascript/">JavaScript</a>
+                      <a class="dropdown-item" href="https://aeclaman.github.io/d3/">D3</a>
+                      <a class="dropdown-item" href="https://bbbiodiveristy-dashboard.herokuapp.com/">Plotly</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTTeeiB45VZaHhjsDTOu-9SCVm_yDZYSbJPcQxH_8ZpqOAM0ovoZo2L_UDDOQT_GKd5fZSMvKxCebb_/pub">Resume</a> -->
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto turquoise-white" href="#">Amy Claman</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
 
-  <header>
-    <h1>Student Bio</h1>
-  </header>
+ 
+  <div class="container">
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <h2 id="bio-name">Amy Claman</h2>
-        <img id="bio-image" src="https://placehold.it/200x200" alt="AClaman Photo">
-      </section>
-      <p>Amy is currently enrolled in a Data Analytics bootcamp offered by Trilogy hosted by Rice University.
-        She ....
-        <a href="https://aeclaman.github.io/matplotlib/">matplotlib hw</a></p>
-    </section>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-5 box">
 
-    <aside id="contact-info">
-      <h2>Contact Info</h2>
+        <section id="main-bio">
+         <!-- <h2 id="bio-name">Your Name</h2> -->
+        <img id="bio-image" src="./Images/aecHeadshot.PNG" alt="Amy Claman">
+         <p>I am currently enrolled in the Rice University Data Analytics Boot Camp, a 24-week, part-time Data Analytics course offered on the Rice campus at the Anderson-Clarke Center. The curriculum includes Advanced Excel, Python, JavaScript (D3.js, Leaflet.js), HTML/CSS, API Interactions, Social Media Mining, SQL, Hadoop, Tableau, Advanced Statistics, Machine Learning, R, Git/GitHub, and more. The curriculum incorporates a blend of real-world projects and marketable hard skills. I will receive a certificate of completion from Rice University’s Susanne M. Glasscock School of Continuing Studies and have a portfolio of projects that demonstrates my working knowledge of data analytics.</p>
+        </section>
+      </div>
+  <!-- <div class="col-12 col-md-1"></div> -->
+  <div class="col-12 col-sm-12 col-md-7 box">
+      <h2 class="text-left">Contact Info</h2>
       <ul>
-        <li><strong>Email:</strong> <a href="#">aeclaman@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">aeclaman</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        <li><strong>Email:</strong> <a href="mailto:aeclaman@gmail.com">aeclaman@gmail.com</a></li>
+        <!-- <li><strong>Github:</strong> <a href="https://aeclaman.github.io/">https://github.com/aeclaman/aeclaman.github.io.git</a></li> -->
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amy-claman-055421172/">https://www.linkedin.com/in/amy-claman-055421172/</a></li>
       </ul>
-    </aside>
-  </main>
+      <div class="row space"></div>
+      <div class="thumbnail">
+          <a href="https://github.com/aeclaman/matplotlib.git">
+            <!-- <img src="Resources/assets/images/cloudymap.png" alt="..." class="img-thumbnail custom-thumbnail"> -->
+            <img id="pyber-bubble" src="./Images/scatter_pyber_ride_sharing.png" alt="Bubble Plot">
+          </a>
+        </div>
+        <p><i>Click image to link to github repository</i></p>
+    </div>
+    </div>
+  </div>
 
 </body>
 
