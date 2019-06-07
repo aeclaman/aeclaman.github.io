@@ -11,9 +11,8 @@ h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size:  30px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  color: rgb(56, 71, 155);
+  padding-bottom: 5px;
+  padding-top: 0px;
 }
 
 h3{
@@ -24,28 +23,54 @@ h3{
   padding-top: 20px;
   color: rgb(56, 71, 155)
 }
+h6 {
+  color: rgb(56, 71, 155);
+}
+
+ul {
+  margin-bottom: 0px;
+}
 
 a {
   color: rgb(56, 71, 155);
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 .navbar {
-  padding: 10px;
+  padding: 20px;
   background: rgb(56, 71, 155);
   }
 
 .box {
-  padding: 30px;
+  padding: 15px;
+  padding-top: 45px;
   color: black;
   background: rgb(235, 229, 229);;
 }
 
 .space{
-  padding-top: 5%; 
-  padding-bottom: 5%;
+  padding-top: 5px; 
+  padding-bottom: 5px;
 }
 
-.turquoise-white {
+.btn-primary.custom-btn {
+	background-color: rgb(56, 71, 155);
+  border-color: rgb(56, 71, 155);
+  color: rgba(255,255,255,.5);
+  border: 0;
+  box-shadow: rgb(56, 71, 155);
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgb(56, 71, 155);
+}
+
+.list-group-item-action:hover {background: lightgrey;}
+
+.blue-white {
   padding: 20px;
   display: inline-block;
   /* display: flex; */
