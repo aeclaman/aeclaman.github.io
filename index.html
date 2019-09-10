@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
             Projects
           </a>
@@ -35,8 +35,13 @@
             <a class="dropdown-item" href="https://bbbiodiveristy-dashboard.herokuapp.com/">Data Visualization with Plotly</a>
             <a class="dropdown-item" href="https://aeclaman-leaflet.herokuapp.com/">Data Visualization with Leaflet</a>
             <a class="dropdown-item" href="https://aeclaman-twitter-project.herokuapp.com/">Data Visualization with NVD3</a>
+            <a class="dropdown-itme" href="https://blindness-detection.herokuapp.com/">Convolutional Neural Networks/Image Processing with OpenCV</a>
           </div>
-        </li>
+        </li> -->
+
+        <li class="nav-item">
+            <a class="nav-link" href="#project-section">Projects</a>
+           </li>
         <li class="nav-item">
           <!-- <a class="nav-link" href="https://gdoc.pub/doc/e/2PACX-1vTTeeiB45VZaHhjsDTOu-9SCVm_yDZYSbJPcQxH_8ZpqOAM0ovoZo2L_UDDOQT_GKd5fZSMvKxCebb_">Resume</a> -->
           <!-- <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vTTeeiB45VZaHhjsDTOu-9SCVm_yDZYSbJPcQxH_8ZpqOAM0ovoZo2L_UDDOQT_GKd5fZSMvKxCebb_/pub">Resume</a> -->
@@ -65,35 +70,167 @@
     </div>
   </nav>
 
+  <div class="jumbotron text-left">
+      <img id="bio-image" src="./Images/aecHeadshot.png" alt="Amy Claman">
+      <h3>I am an accomplished software developer with a B.S. in Quantitative Business Analysis. My history of
+        success is directly related to my strengths in identifying problems, listening to user requirements and
+        company needs, performing analysis and communicating results. In addition, my resourceful and self-motivated
+        nature have led me to enhance data collection and reporting at a local non-profit. I am able to leverage my
+        background in software programming to become a successful data analyst utilizing my current knowledge of
+        modern analytic tools learned from Rice’s Data Analytics Bootcamp.</h3>
+      <h2 class="text-center">Contact Info</h2>
+      <p class="text-center"><strong>Email:</strong> <a href="mailto:aeclaman@gmail.com">aeclaman@gmail.com</a></p>
+      <p class="text-center"><strong>Github:</strong> <a href="https://github.com/aeclaman">https://github.com/aeclaman/</a></p>
+      <p class="text-center"><strong>LinkedIn:</strong> <a
+        href="https://www.linkedin.com/in/amy-claman-055421172/">https://www.linkedin.com/in/amy-claman-055421172/</a></p>
+  </div>
 
   <div class="container">
     <div class="row space"></div>
-    <!-- <div class="row">
-      <div class="col-12 col-sm-12 col-md-12 box">
-      <h6> <p>I am an accomplished software developer with a B.S. in Quantitative Business Analysis. My history of success is directly related to my strengths in identifying problems, listening to user requirements and company needs, performing analysis and communicating results. In addition, my resourceful and self-motivated nature have led me to enhance data collection and reporting at a local non-profit. I am able to leverage my background in software programming to become a successful data analyst utilizing my current knowledge of modern analytic tools learned from Rice’s Data Analytics Bootcamp.</p>
-      </h6></div>
-    </div> -->
     <div class="row">
+        <nav class="navbar bg-faded">
+            <h1 id="project-section" class="navbar-brand mx-left blue-white-small">Projects</h1>
+        </nav>
+    </div>
+    <div class="row space"></div>
+
+    <div class="card-deck">
+    <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Weather Web Visualization Dashboard</h4>
+          <p class="card-text">Used HTML and CSS to create a dashboard for visualizing weather data. The weather data was collected and plotted for 500+ cities across the world using python, OpenWeatherMap API, Matplotlib and Pandas.</p>
+          <br>
+          <a href="https://aeclaman.github.io/web/" class="btn btn-custom align-self-end">Dashboard</a>
+          <a href="https://github.com/aeclaman/web.git" class="btn btn-custom">Github Repo</a>
+        </div>
+      </div>
+      <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">UFO Sightings</h4>
+            <p class="card-text">Created a table dynamically based upon a provided dataset. Site allows users to filter the table data for specific values. Project uses pure JavaScript, HTML, and CSS and D3.js on the web page.</p>
+            <br><br><br>
+            <a href="https://aeclaman.github.io/javascript/" class="btn btn-custom">Dashboard</a>
+            <a href="https://github.com/aeclaman/javascript.git" class="btn btn-custom">Github Repo</a>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Health Risks vs. Demographics</h4>
+              <p class="card-text">Interactive Data Visualization with D3.</p>
+              <br><br><br><br><br><br>
+              <a href="https://aeclaman.github.io/d3/" class="btn btn-custom">Scatterplot</a>
+              <a href="https://github.com/aeclaman/d3.git" class="btn btn-custom">Github Repo</a>
+            </div>
+          </div>
+    </div>
+    <div class="row space"></div>
+    <div class="row space"></div>
+    <div class="card-deck">
+          <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Belly Button Biodiversity</h4>
+                <p class="card-text">Used Plotly to build interactive charts for my dashboard based on a given dataset. Per sample selected, created a dynamic pie chart, bubble chart and gauge chart. This project also utlized Flask and Heroku.
+                <br><br><br><br><br><br>
+                <a href="https://bbbiodiveristy-dashboard.herokuapp.com/" class="btn btn-custom">Dashboard</a>
+                <a href="https://github.com/aeclaman/Plotly.git" class="btn btn-custom">Github Repo</a>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Earthquake Visualization with Leaflet</h4>
+                  <p class="card-text">Used data from the United States Geological Survey (geoJSON) to plot earthquakes based on their longitude and latitude. Data markers used reflect the magnitude of the earthquake in size and color. </p>
+                  <br><br><br>
+                  <a href="https://aeclaman-leaflet.herokuapp.com/" class="btn btn-custom">Map</a>
+                  <a href="https://github.com/aeclaman/leaflet.git" class="btn btn-custom">Github Repo</a>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Mission to Mars </h4>
+                    <p class="card-text">Used MongoDB with Flask, Splinter and BeautifulSoup to create an HTML page that displays information that was scraped from various websites for data related to Mars.</p>
+                    <br><br><br><br><br>
+                    <a href="https://aeclaman-web-scraping.herokuapp.com" class="btn btn-custom">Dashboard</a>
+                    <a href="https://github.com/aeclaman/Web-Scraping-and-Document-Databases.git" class="btn btn-custom">Github Repo</a>
+                  </div>
+                </div>
+      </div>
+      <div class="row space"></div>
+      <div class="row space"></div>
+      <div class="card-deck">
+          <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Decision 2020</h4>
+                <p class="card-text">Data visualization project which takes a look at the 2020 presidential
+                    candidates presence on twitter in terms of followers, retweets and 'liked' tweets (favorites).
+                    It also looks at certain (pre-defined) terms to see how often the candidates are mentioning
+                    them in their tweets. The Twitter API is utilized with the python tweepy wrapper as well as MongoDB, Flask, javascript (nvd3) and Heroku.</p>
+                <br><br>
+                <a href="https://aeclaman-twitter-project.herokuapp.com/" class="btn btn-custom">Dashboard</a>
+                <a href="https://github.com/aeclaman/twitter-project.git" class="btn btn-custom">Github Repo</a>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Blindness Detection Application</h4>
+                  <p class="card-text">The blindness Detection App intends to classify and predict the severity of Diabetic Retinopathy from retinal images. Used Python, Keras, Tensorflow, SciKit-Learn, Plotly, Flask and Heroku to build an image classifier used to detect the proper level of retinopathy in the patient.</p>
+                  <br>
+                  <p><i>*This was a collaborative project. See repository.</i></p>
+                  <br>
+                  <a href="https://blindness-detection.herokuapp.com/" class="btn btn-custom">Application</a>
+                  <a href="https://github.com/velmavasquez/Blindness-Detection-App.git" class="btn btn-custom">Github Repo</a>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Tableau</h4>
+                    <p class="card-text">Aggregated the data found in the Citi Bike Trip History Logs to build a Tableau Story.</p>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <a href="https://public.tableau.com/profile/amy.claman#!/vizhome/aeclaman_citibike/Story1?publish=yes" class="btn btn-custom">Tableau Story</a>
+                    <a href="https://github.com/aeclaman/Tableau.git" class="btn btn-custom">Github Repo</a>
+                  </div>
+                </div>
+      </div>
+                <div class="row space"></div>
+                <div class="row space"></div>
+                <!-- <div class="card-deck"> -->
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                      <h4 class="card-title">Pyber </h4>
+                      <p class="card-text">Used jupyter notebook and matplotlib to create charts based on fictional ride sharing data. This project includes several pie charts plus a bubble plot that showcases the relationship between four key variables:
+                          Average Fare per City, Total Number of Rides per City, Total Number of Drivers per City and City Type (Urban, Suburban, Rural).</p>
+                      <br>
+                      <a href="https://github.com/aeclaman/matplotlib.git" class="btn btn-custom">Github Repo</a>
+                    </div>
+                  </div>
+                  <div class="card"></div>
+                  <div class="card"></div>
+                  <!-- </div> -->
+      </div>
+
+
+    <!-- old code -->
+    <!-- <div class="row">
       <div class="col-12 col-sm-12 col-md-5 box">
 
-        <section id="main-bio">
+        <section id="main-bio"> -->
           <!-- <h2 id="bio-name">Your Name</h2> -->
-          <img id="bio-image" src="./Images/aecHeadshot.png" alt="Amy Claman">
+          <!-- <img id="bio-image" src="./Images/aecHeadshot.png" alt="Amy Claman">
           <p>I am an accomplished software developer with a B.S. in Quantitative Business Analysis. My history of
             success is directly related to my strengths in identifying problems, listening to user requirements and
             company needs, performing analysis and communicating results. In addition, my resourceful and self-motivated
             nature have led me to enhance data collection and reporting at a local non-profit. I am able to leverage my
             background in software programming to become a successful data analyst utilizing my current knowledge of
-            modern analytic tools learned from Rice’s Data Analytics Bootcamp.</p>
+            modern analytic tools learned from Rice’s Data Analytics Bootcamp.</p> -->
           <!-- <p>Currently enrolled in the Rice University Data Analytics Boot Camp, a 24-week, part-time Data Analytics course offered on the Rice campus at the Anderson-Clarke Center. The curriculum includes Advanced Excel, Python, JavaScript (D3.js, Leaflet.js), HTML/CSS, API Interactions, Social Media Mining, SQL, Hadoop, Tableau, Advanced Statistics, Machine Learning, R, Git/GitHub, and more. The curriculum incorporates a blend of real-world projects and marketable hard skills. I will receive a certificate of completion from Rice University’s Susanne M. Glasscock School of Continuing Studies and have a portfolio of projects that demonstrates my working knowledge of data analytics. <i>(2/4/19 - 8/3/19)</i></p> -->
-        </section>
-      </div>
+        <!-- </section>
+      </div>  -->
       <!-- <div class="col-12 col-md-1"></div> -->
-      <div class="col-12 col-sm-12 col-md-7 box">
+      <!-- <div class="col-12 col-sm-12 col-md-7 box">
         <h2 class="text-left">Contact Info</h2>
         <ul>
           <li><strong>Email:</strong> <a href="mailto:aeclaman@gmail.com">aeclaman@gmail.com</a></li>
-          <!-- <li><strong>Github:</strong> <a href="https://aeclaman.github.io/">https://github.com/aeclaman/aeclaman.github.io.git</a></li> -->
+          <li><strong>Github:</strong> <a href="https://github.com/aeclaman">https://github.com/aeclaman/</a></li>
           <li><strong>LinkedIn:</strong> <a
               href="https://www.linkedin.com/in/amy-claman-055421172/">https://www.linkedin.com/in/amy-claman-055421172/</a>
           </li>
@@ -101,13 +238,13 @@
         <div class="row space"></div>
         <div class="row space"></div>
         <div class="thumbnail">
-          <a href="https://github.com/aeclaman/matplotlib.git">
+          <a href="https://github.com/aeclaman/matplotlib.git"> -->
             <!-- <img src="Resources/assets/images/cloudymap.png" alt="..." class="img-thumbnail custom-thumbnail"> -->
-            <img id="pyber-bubble" src="./Images/scatter_pyber_ride_sharing.png" alt="Bubble Plot">
+            <!-- <img id="pyber-bubble" src="./Images/scatter_pyber_ride_sharing.png" alt="Bubble Plot">
           </a>
         </div>
         <p><i>Click image to link to github repository</i></p>
-      </div>
+      </div> -->
       <!-- <div class="row space"></div> -->
       <!-- <div class="row">
         <div class="col-12 col-sm-12 col-md-12 box">
@@ -118,7 +255,7 @@
               projects and marketable hard skills.</i></p>
         </div>
       </div> -->
-    </div>
+    <!-- </div> -->
   </div>
 
   <!-- modal code -->

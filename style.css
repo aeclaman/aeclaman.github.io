@@ -3,7 +3,8 @@ myborder{
 }
 
 body{
-    background: rgb(235, 229, 229);
+    /* background: rgb(235, 229, 229); */
+    background: rgb(56, 71, 155);
     background-image: url("https://www.smartgrid-forums.com/wp-content/uploads/2018/07/data-analytics-1.jpg>");
 }
 
@@ -27,9 +28,10 @@ h6 {
   color: rgb(56, 71, 155);
 }
 
-ul {
-  margin-bottom: 0px;
-}
+/* ul {
+  text-align: center;
+  list-style-position: inside;
+} */
 
 a {
   color: rgb(56, 71, 155);
@@ -37,6 +39,10 @@ a {
 
 p {
   margin-bottom: 0px;
+}
+
+.container .jumbotron {
+  padding-left: 0px;
 }
 
 .navbar {
@@ -54,6 +60,12 @@ p {
 .space{
   padding-top: 5px; 
   padding-bottom: 5px;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: rgb(56, 71, 155);
+  border-color: rgb(56, 71, 155);
 }
 
 .btn-primary.custom-btn {
@@ -78,6 +90,19 @@ p {
   color: white;
   background: rgb(56, 71, 155);
   font-size:  40px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blue-white-small {
+  padding: 5px;
+  margin: 0px;
+  display: inline-block;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  color: white;
+  background: rgb(56, 71, 155);
+  font-size:  30px;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -108,8 +133,8 @@ p {
 }
   
 #bio-image {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 375px;
   margin-right: 20px;
   float: left;
 }
